@@ -1,7 +1,9 @@
-i = 1
-j = 5
+size = int(input())
 
-while i <= 5:
+i = 1
+j = size
+
+while i <= size:
     while j >= 1:
         for k in range(1, j+1):
             print("*", end=" ")
