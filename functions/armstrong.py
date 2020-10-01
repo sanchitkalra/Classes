@@ -1,5 +1,3 @@
-#armstrong number
-
 def checkArm(number):
     number = number
 
@@ -29,16 +27,4 @@ def checkArm(number):
         print("number is not armstrong")
         return False
 
-count = 0
-arm_numbers = []
-
-for i in range(0, 1000):
-    if checkArm(str(i)):
-        count += 1
-        arm_numbers.append(i)
-        print(i)
-
-
-print("total armstrong numbers: ", count)
-print("numbers: ")
-print(arm_numbers)
+checkArm(23)

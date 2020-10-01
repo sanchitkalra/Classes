@@ -1,8 +1,6 @@
-#size = int(input())
+size = int(input())
 
-size = 6
-
-for k in range(1, size+1):
+for k in range(1, size):
     flag = False
     x = 0
     for j in range(k-1, 0, -1):
