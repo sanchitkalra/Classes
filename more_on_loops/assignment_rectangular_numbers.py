@@ -1,14 +1,12 @@
-#size = int(input())
-
-# for k in range(size):
-#     for j in range(2*size):
-#         x = size - j
-#         print(x, end = "")
-#     print("")
-
-n = 4
-
-size = 2*n - 1
-
-while i <= size:
-    
+## Read input as specified in the question.
+## Print output as specified in the question.
+n = int(input())
+for line in range(1, 2*n):
+    a = n
+    for col in range(1, 2*n):
+        print(a, end = "")
+        if col < line:
+            a -= 1
+        if col >= 2*n - line:
+            a += 1
+    print("")
