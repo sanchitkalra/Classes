@@ -1,100 +1,75 @@
-# #  
-# # Attempt 2
-# # 
-
-# import sys
-
+import sys
+# alternative solution:
 # def intersections(arr1, n, arr2, m) :
-#     intersection = [ list(set(arr1) and set(arr2)) ]
-#     x = ""
-#     for k in intersection:
-#         x += str(k)
-#     return x
+#     for i in range(n):
+#         for j in range(m):
+#             if arr1[i]==arr2[j]:
+#                 print(arr1[i],end=' ')
+#                 arr2[j]=sys.maxsize
+#                 break
+def intersections(arr1, n, arr2, m) :
+    intersection = []
+    for k in arr1:
+        for j in arr2:
+            if k == j:
+                arr2.remove(j)
+                intersection.append(j)
+                break
+    x = ""
+    for k in intersection:
+        x += str(k) + " "
+    print(x)
+    return x
 
-# #Taking Input Using Fast I/O
-# def takeInput() :
-#     n = int(sys.stdin.readline().strip())
-#     if n == 0:
-#         return list(), 0
+#Taking Input Using Fast I/O
+def takeInput() :
+    n = int(sys.stdin.readline().strip())
+    if n == 0:
+        return list(), 0
 
-#     arr = list(map(int, sys.stdin.readline().strip().split(" ")))
-#     return arr, n
-
-
-# #main
-# t = int(sys.stdin.readline().strip())
-
-# while t > 0 :
-#     arr1, n = takeInput()
-#     arr2, m = takeInput()
-
-#     intersections(arr1, n, arr2, m)
-#     print()
-
-#     t -= 1
-
-# #  
-# # Attempt 1
-# # 
-
-# # import sys
-
-# # def intersections(arr1, n, arr2, m) :
-# #     intersection = [ value for value in arr1 if value in arr2 ]
-# #     x = ""
-# #     for k in intersection:
-# #         x += str(k)
-# #     return x
-
-# # #Taking Input Using Fast I/O
-# # def takeInput() :
-# #     n = int(sys.stdin.readline().strip())
-# #     if n == 0:
-# #         return list(), 0
-
-# #     arr = list(map(int, sys.stdin.readline().strip().split(" ")))
-# #     return arr, n
+    arr = list(map(int, sys.stdin.readline().strip().split(" ")))
+    return arr, n
 
 
-# # #main
-# # t = int(sys.stdin.readline().strip())
+#main
+t = int(sys.stdin.readline().strip())
 
-# # while t > 0 :
-# #     arr1, n = takeInput()
-# #     arr2, m = takeInput()
+while t > 0 :
+    arr1, n = takeInput()
+    arr2, m = takeInput()
 
-# #     intersections(arr1, n, arr2, m)
-# #     print()
+    intersections(arr1, n, arr2, m)
+    print()
 
-# #     t -= 1
+    t -= 1
 
 #---------------------------------------------------
 # logical testing
 #---------------------------------------------------
 
-arr = [
-    [6, 9, 8, 5],
-    [9, 2, 4, 1, 8]
-]
-
 # arr = [
-#     [2, 6, 1, 2],
-#     [1, 2, 3, 4, 2]
+#     [6, 9, 8, 5],
+#     [9, 2, 4, 1, 8]
 # ]
 
-temp1 = []
-temp2 = []
+# # arr = [
+# #     [2, 6, 1, 2],
+# #     [1, 2, 3, 4, 2]
+# # ]
 
-intersection = []
+# temp1 = []
+# temp2 = []
 
-for k in arr[0]:
-    for j in arr[1]:
-        if k == j:
-            arr[1].remove(j)
-            intersection.append(j)
+# intersection = []
+
+# for k in arr[0]:
+#     for j in arr[1]:
+#         if k == j:
+#             arr[1].remove(j)
+#             intersection.append(j)
 
 
-print(intersection)
+# print(intersection)
 
 #-------------------------------------------------------------------------
 # everything below this line are experiments, some do not work as intended
