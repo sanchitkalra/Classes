@@ -28,6 +28,18 @@ while i <= size:
     print("")
     i += 1
 
+# Alternative Solution
+
+size = 5
+
+index = ord("E")
+
+for k in range(size):
+    for j in range(index, index+k+1):
+        print(chr(j), end = "")
+    print("")
+    index -= 1
+
 # size = 5
 
 # i = 1
