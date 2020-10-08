@@ -73,6 +73,17 @@ for i in range(4):
     print("-------------------")
 
 #---------------------------------------------------
+# alternative solution without the use of any in-built function
+#---------------------------------------------------
+
+for i in range(n):
+        for j in range(n):
+            if (i != j) and (arr[i] == arr[j]):
+                break
+        else:
+            print(arr[i])
+
+#---------------------------------------------------
 #test logic
 #---------------------------------------------------
 
