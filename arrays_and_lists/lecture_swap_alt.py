@@ -40,6 +40,11 @@ while t > 0 :
         printList(arr, n)
     t -= 1
 
+# alternative solution
+
+for k in range(0, len(arr)-1, 2):
+    arr[k], arr[k+1] = arr[k+1], arr[k]
+
 # ---------------------------------------------------------------------------------------------------------
 # code used for testing algorithm, no need to use it
 # the following are test cases tested independently for logical testing, you may refer to them for dry runs
