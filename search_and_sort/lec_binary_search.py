@@ -12,11 +12,9 @@ def binarySearch(arr, n, x) :
         if arr[mid] == x:
             return mid
         elif arr[mid] > x:
-            start = 0
             end = mid - 1
         else:
             start = mid + 1
-            end = len(arr) - 1
     else:
         return -1
     
@@ -60,11 +58,9 @@ while start <= end:
         print(mid)
         break
     elif (arr[mid] > x):
-        start = 0
         end = mid - 1
     else:
         start = mid + 1
-        end = len(arr) - 1
 
 else:
     print("-1")
