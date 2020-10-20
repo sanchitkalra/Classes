@@ -9,7 +9,7 @@ def printList1(arr):
             print(arr[k][j], end = " ")
         print("")
 
-printList1(arr)
+#printList1(arr)
 
 # method 2
 # prints any list, including jagged lists
@@ -19,7 +19,7 @@ def printList2(arr):
             print(arr[k][j], end = " ")
         print("")
 
-printList2(jagged)
+#printList2(jagged)
 
 # method 3
 # a better implementation for method 2
@@ -29,7 +29,7 @@ def printList3(arr):
             print(element, end = " ")
         print("")
 
-printList3(jagged)
+#printList3(jagged)
 
 # method 4
 # using the join function
@@ -38,4 +38,4 @@ def printList4(arr):
         out = " ".join( [ str(element) for element in row ] )
         print(out)
 
-printList4(jagged)
+#printList4(jagged)

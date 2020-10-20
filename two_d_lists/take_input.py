@@ -9,7 +9,7 @@ def takeInputM1():
 
     return matrix
 
-print(takeInputM1())
+#print(takeInputM1())
 
 # method 2
 # take input for all elements in one single input
@@ -23,4 +23,4 @@ def takeInputM2():
 
     return matrix
 
-print(takeInputM2())
+#print(takeInputM2())
