@@ -35,7 +35,19 @@ print(arr)
 # print(arr)
 
 # solution using only for loops 
-# to be implemented
+arr = [1, 5, 3, 7, 2, 6, 0]
+
+for i in range(len(arr)-1):
+    smallest = arr[i]
+    index = -1
+    for k in range(i, len(arr)):
+        if arr[k] <= smallest:
+            smallest = arr[k]
+            index = k
+    arr[index], arr[i] = arr[i], arr[index]
+    print("arr at {}th iteration is {}".format(i, arr))
+
+print(arr)
 
 # # solution using only while loops
 # to be implemented
