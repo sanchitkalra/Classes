@@ -14,6 +14,7 @@ Contents:
 - [Two Dimensional Lists](/two_d_lists)
 - [Strings](/strings)
 - [Tuples, Dictionary and Sets](/tuples_dict_sets)
+- [Teams(this directory contains assignments given in class on Microsoft Teams)](/Teams)
 
 All of this code is free to use, copy, modify and improve.
 
