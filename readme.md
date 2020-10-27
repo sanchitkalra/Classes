@@ -1,6 +1,6 @@
 ### Microsoft Teams Assignments and other interesting codes
 
-This repository will contain all code from Coding Ninjas Assignments and Microsoft Teams regular classes and other stuff I do and find interesting sorted into folders by topic.
+This repository contains all code from Coding Ninjas Assignments and Microsoft Teams regular classes and other stuff I do and find interesting sorted into folders by topic.
 
 Contents:
 - [Code Zen Problems](/code_zen)
