@@ -5,7 +5,7 @@ This repository contains all code from Coding Ninjas Assignments and Microsoft T
 Contents:
 - [Code Zen Problems](/code_zen)
 - [Introduction to Python](/intro_py)
-- [Conditionals and Loop](/conditionals_and_loops)
+- [Conditionals and Loop](/conditions_and_loops)
 - [Patterns (Patterns 1 and 2 among many other patterns)](/patterns)
 - [More on Loops](/more_on_loops)
 - [Functions](/functions)
